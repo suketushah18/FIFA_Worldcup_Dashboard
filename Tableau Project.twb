@@ -1,0 +1,2093 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0324.2209                               -->
+<workbook original-version='18.1' source-build='2022.1.0 (20221.22.0324.2209)' source-platform='win' version='18.1' xml:base='https://prod-ca-a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='TableauProject' path='/t/pthakkar/workbooks' revision='1.2' site='pthakkar' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='WorldCup Data' inline='true' name='federated.1v0ot6x1s51lak131kgpz0ctyga8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='world_cup_results' name='excel-direct.0ojb4r01z085x718ldzkt04kfbm7'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/thakk/Downloads/world_cup_results.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0ojb4r01z085x718ldzkt04kfbm7' name='WorldCups' table='[WorldCups$]' type='table'>
+          <columns gridOrigin='A1:J21:no:A1:J21:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='string' name='Winner' ordinal='2' />
+            <column datatype='string' name='Runners-Up' ordinal='3' />
+            <column datatype='string' name='Third' ordinal='4' />
+            <column datatype='string' name='Fourth' ordinal='5' />
+            <column datatype='integer' name='GoalsScored' ordinal='6' />
+            <column datatype='integer' name='QualifiedTeams' ordinal='7' />
+            <column datatype='integer' name='MatchesPlayed' ordinal='8' />
+            <column datatype='string' name='Attendance' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0ojb4r01z085x718ldzkt04kfbm7' name='WorldCups' table='[WorldCups$]' type='table'>
+          <columns gridOrigin='A1:J21:no:A1:J21:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='string' name='Winner' ordinal='2' />
+            <column datatype='string' name='Runners-Up' ordinal='3' />
+            <column datatype='string' name='Third' ordinal='4' />
+            <column datatype='string' name='Fourth' ordinal='5' />
+            <column datatype='integer' name='GoalsScored' ordinal='6' />
+            <column datatype='integer' name='QualifiedTeams' ordinal='7' />
+            <column datatype='integer' name='MatchesPlayed' ordinal='8' />
+            <column datatype='string' name='Attendance' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[WorldCups]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[WorldCups]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Winner</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Winner]</local-name>
+            <parent-name>[WorldCups]</parent-name>
+            <remote-alias>Winner</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Runners-Up</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Runners-Up]</local-name>
+            <parent-name>[WorldCups]</parent-name>
+            <remote-alias>Runners-Up</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Third</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Third]</local-name>
+            <parent-name>[WorldCups]</parent-name>
+            <remote-alias>Third</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fourth</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Fourth]</local-name>
+            <parent-name>[WorldCups]</parent-name>
+            <remote-alias>Fourth</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GoalsScored</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GoalsScored]</local-name>
+            <parent-name>[WorldCups]</parent-name>
+            <remote-alias>GoalsScored</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QualifiedTeams</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QualifiedTeams]</local-name>
+            <parent-name>[WorldCups]</parent-name>
+            <remote-alias>QualifiedTeams</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MatchesPlayed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MatchesPlayed]</local-name>
+            <parent-name>[WorldCups]</parent-name>
+            <remote-alias>MatchesPlayed</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attendance</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Attendance]</local-name>
+            <parent-name>[WorldCups]</parent-name>
+            <remote-alias>Attendance</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[WorldCups]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J21:no:A1:J21:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='CountD' datatype='string' name='[Attendance]' role='dimension' type='nominal' />
+      <column caption='Attendance_Position' datatype='string' name='[Calculation_1392456735781154817]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF FINDNTH([Attendance],&quot;.&quot;,2) &gt; 0&#13;&#10;THEN&#13;&#10;LEFT([Attendance],FINDNTH([Attendance],&quot;.&quot;,2)-1)&#13;&#10;ELSEIF FINDNTH([Attendance],&quot;.&quot;,1) &gt; 0&#13;&#10;THEN&#13;&#10;LEFT([Attendance],FINDNTH([Attendance],&quot;.&quot;,1)-1)&#13;&#10;ELSE&#13;&#10;[Attendance]&#13;&#10;END' />
+      </column>
+      <column caption='Audiance' datatype='string' name='[Calculation_1392456735784648707]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='REPLACE([Calculation_1392456735781154817],&quot;.&quot;,&quot;&quot;)' />
+      </column>
+      <column aggregation='Sum' caption='cal1' datatype='integer' name='[Calculation_1392456735790149637]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='FINDNTH([Attendance],&quot;.&quot;,2)' />
+      </column>
+      <column caption='AttendanceInt' datatype='integer' name='[Calculation_1392456735791280134]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT([Calculation_1392456735784648707])' />
+      </column>
+      <column caption='number of records' datatype='integer' name='[Calculation_1392456735809101834]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;England&quot;' value='&quot;United Kingdom&quot;' />
+          <semantic-value key='&quot;Korea/Japan&quot;' value='&quot;Japan&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='Goals Scored' datatype='integer' name='[GoalsScored]' role='measure' type='quantitative' />
+      <column caption='Matches Played' datatype='integer' name='[MatchesPlayed]' role='measure' type='quantitative' />
+      <column caption='Qualified Teams' datatype='integer' name='[QualifiedTeams]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Runners-Up]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Winner]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='WorldCups' datatype='table' name='[__tableau_internal_object_id__].[WorldCups_C61BCF8EB811427FACE8F1757FC14D4E]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[WorldCups_C61BCF8EB811427FACE8F1757FC14D4E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:WorldCups_C61BCF8EB811427FACE8F1757FC14D4E:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MatchesPlayed]' derivation='Count' name='[cnt:MatchesPlayed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MatchesPlayed]' derivation='Max' name='[max:MatchesPlayed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MatchesPlayed]' derivation='Min' name='[min:MatchesPlayed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Runners-Up]' derivation='None' name='[none:Runners-Up:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Winner]' derivation='None' name='[none:Winner:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1392456735791280134]' derivation='Sum' name='[sum:Calculation_1392456735791280134:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GoalsScored]' derivation='Sum' name='[sum:GoalsScored:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MatchesPlayed]' derivation='Sum' name='[sum:MatchesPlayed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[QualifiedTeams]' derivation='Sum' name='[sum:QualifiedTeams:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Runners-Up)' hidden='true' name='[Action (Runners-Up)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Runners-Up]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1392456735776907264:nk]' palette='tableau-10-medium' type='palette'>
+            <map to='#67bf5c'>
+              <bucket>&quot;England&quot;</bucket>
+            </map>
+            <map to='#6dccda'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#729ece'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#a8786e'>
+              <bucket>&quot;Germany FR&quot;</bucket>
+            </map>
+            <map to='#ad8bc9'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#cdcc5d'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#ed665d'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#ed97ca'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#ff9e4a'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Runners-Up:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Czechoslovakia&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Germany FR&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' palette='tableau-10-medium' type='palette'>
+            <map to='#729ece'>
+              <bucket>&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[sum:GoalsScored:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[__tableau_internal_object_id__].[cnt:WorldCups_C61BCF8EB811427FACE8F1757FC14D4E:qk]&quot;</bucket>
+            </map>
+            <map to='#ad8bc9'>
+              <bucket>&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[cnt:MatchesPlayed:qk]&quot;</bucket>
+            </map>
+            <map to='#ad8bc9'>
+              <bucket>&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[max:MatchesPlayed:qk]&quot;</bucket>
+            </map>
+            <map to='#ad8bc9'>
+              <bucket>&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[min:MatchesPlayed:qk]&quot;</bucket>
+            </map>
+            <map to='#ad8bc9'>
+              <bucket>&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[sum:MatchesPlayed:qk]&quot;</bucket>
+            </map>
+            <map to='#cdcc5d'>
+              <bucket>&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[sum:QualifiedTeams:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[sum:Calculation_1392456735791280134:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Winner:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;England&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Germany FR&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='WorldCups' id='WorldCups_C61BCF8EB811427FACE8F1757FC14D4E'>
+            <properties context=''>
+              <relation connection='excel-direct.0ojb4r01z085x718ldzkt04kfbm7' name='WorldCups' table='[WorldCups$]' type='table'>
+                <columns gridOrigin='A1:J21:no:A1:J21:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='string' name='Winner' ordinal='2' />
+                  <column datatype='string' name='Runners-Up' ordinal='3' />
+                  <column datatype='string' name='Third' ordinal='4' />
+                  <column datatype='string' name='Fourth' ordinal='5' />
+                  <column datatype='integer' name='GoalsScored' ordinal='6' />
+                  <column datatype='integer' name='QualifiedTeams' ordinal='7' />
+                  <column datatype='integer' name='MatchesPlayed' ordinal='8' />
+                  <column datatype='string' name='Attendance' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1v0ot6x1s51lak131kgpz0ctyga8'>
+      <datasources>
+        <datasource caption='WorldCup Data' name='federated.1v0ot6x1s51lak131kgpz0ctyga8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1v0ot6x1s51lak131kgpz0ctyga8'>
+        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+          <semantic-values semantic-role='[Country].[Name]'>
+            <semantic-value key='&quot;England&quot;' value='&quot;United Kingdom&quot;' />
+            <semantic-value key='&quot;Korea/Japan&quot;' value='&quot;Japan&quot;' />
+          </semantic-values>
+        </column>
+        <column datatype='string' name='[Fourth]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Runners-Up]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Third]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Winner]' role='dimension' type='nominal' />
+        <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+        <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Fourth]' derivation='None' name='[none:Fourth:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Runners-Up]' derivation='None' name='[none:Runners-Up:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Third]' derivation='None' name='[none:Third:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Winner]' derivation='None' name='[none:Winner:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]'>
+        <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Fourth:nk]'>
+        <groupfilter function='level-members' level='[none:Fourth:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]'>
+        <groupfilter function='level-members' level='[none:Runners-Up:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Third:nk]'>
+        <groupfilter function='level-members' level='[none:Third:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]'>
+        <groupfilter function='level-members' level='[none:Winner:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]'>
+        <groupfilter function='level-members' level='[none:Year:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_8921BC61895D481EB1A3CCDC91036CEE]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Football Worldcup Report' type='sheet' worksheet='Data Table' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Football Worldcup Report' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_7AA1EA1386ED4CF996BCE709FAC8C6D8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Football Worldcup Report' type='sheet' worksheet='World Map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Football Worldcup Report' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_A3F94B3153C54A18B711E45A06AA776A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Football Worldcup Report' type='sheet' worksheet='Measures Values By Year' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Football Worldcup Report' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_A199AD51F1AC41EC8BF0E30DFF2C28C1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Football Worldcup Report' type='sheet' worksheet='Runners-up Count By Country' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Football Worldcup Report' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5_17CBD2E5B089468A8E9FB8E2CA2F2701]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Football Worldcup Report' type='sheet' worksheet='Winners Count By Country' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Football Worldcup Report' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Data Table'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WorldCup Data' name='federated.1v0ot6x1s51lak131kgpz0ctyga8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0ot6x1s51lak131kgpz0ctyga8'>
+            <column aggregation='CountD' datatype='string' name='[Attendance]' role='dimension' type='nominal' />
+            <column caption='Attendance_Position' datatype='string' name='[Calculation_1392456735781154817]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF FINDNTH([Attendance],&quot;.&quot;,2) &gt; 0&#13;&#10;THEN&#13;&#10;LEFT([Attendance],FINDNTH([Attendance],&quot;.&quot;,2)-1)&#13;&#10;ELSEIF FINDNTH([Attendance],&quot;.&quot;,1) &gt; 0&#13;&#10;THEN&#13;&#10;LEFT([Attendance],FINDNTH([Attendance],&quot;.&quot;,1)-1)&#13;&#10;ELSE&#13;&#10;[Attendance]&#13;&#10;END' />
+            </column>
+            <column caption='Audiance' datatype='string' name='[Calculation_1392456735784648707]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='REPLACE([Calculation_1392456735781154817],&quot;.&quot;,&quot;&quot;)' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;England&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;Korea/Japan&quot;' value='&quot;Japan&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='string' name='[Fourth]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Runners-Up]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Third]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Winner]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1392456735784648707]' derivation='None' name='[none:Calculation_1392456735784648707:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fourth]' derivation='None' name='[none:Fourth:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Runners-Up]' derivation='None' name='[none:Runners-Up:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Third]' derivation='None' name='[none:Third:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Winner]' derivation='None' name='[none:Winner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[Action (Runners-Up)]'>
+            <groupfilter function='level-members' level='[Runners-Up]' user:ui-action-filter='[Action4_A199AD51F1AC41EC8BF0E30DFF2C28C1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Fourth:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Third:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[Action (Runners-Up)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='5' />
+            <format attr='height' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Calculation_1392456735784648707:nk]' value='38' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Calculation_1392456735784648707:nk]' value='144' />
+            <format attr='width' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]' value='96' />
+            <format attr='width' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]' value='100' />
+            <format attr='width' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' value='100' />
+            <format attr='width' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]' value='124' />
+            <format attr='width' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Fourth:nk]' value='152' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='color' value='#57829e' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='cols' value='#e9f3f2' />
+            <format attr='stroke-color' scope='rows' value='#e9f3f2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]' />
+              <text column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]' />
+              <text column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' />
+              <text column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]' />
+              <text column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Third:nk]' />
+              <text column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Fourth:nk]' />
+              <text column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Calculation_1392456735784648707:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='1' />
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='solid' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok] / ([federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk] / ([federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk] / ([federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk] / ([federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Third:nk] / ([federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Fourth:nk] / [federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Calculation_1392456735784648707:nk]))))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{456F9A4E-245F-47A0-B17A-87D07A25A557}' />
+    </worksheet>
+    <worksheet name='Measures Values By Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WorldCup Data' name='federated.1v0ot6x1s51lak131kgpz0ctyga8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0ot6x1s51lak131kgpz0ctyga8'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;England&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;Korea/Japan&quot;' value='&quot;Japan&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='string' name='[Fourth]' role='dimension' type='nominal' />
+            <column caption='Goals Scored' datatype='integer' name='[GoalsScored]' role='measure' type='quantitative' />
+            <column caption='Matches Played' datatype='integer' name='[MatchesPlayed]' role='measure' type='quantitative' />
+            <column caption='Qualified Teams' datatype='integer' name='[QualifiedTeams]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Runners-Up]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Third]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Winner]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fourth]' derivation='None' name='[none:Fourth:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Runners-Up]' derivation='None' name='[none:Runners-Up:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Third]' derivation='None' name='[none:Third:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Winner]' derivation='None' name='[none:Winner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[GoalsScored]' derivation='Sum' name='[sum:GoalsScored:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MatchesPlayed]' derivation='Sum' name='[sum:MatchesPlayed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[QualifiedTeams]' derivation='Sum' name='[sum:QualifiedTeams:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[sum:GoalsScored:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[sum:MatchesPlayed:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[sum:QualifiedTeams:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[sum:GoalsScored:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[sum:MatchesPlayed:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1v0ot6x1s51lak131kgpz0ctyga8].[sum:QualifiedTeams:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[Action (Runners-Up)]'>
+            <groupfilter function='level-members' level='[Runners-Up]' user:ui-action-filter='[Action4_A199AD51F1AC41EC8BF0E30DFF2C28C1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]' direction='DESC' using='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[sum:GoalsScored:qk]' />
+          <slices>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Fourth:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Third:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[Action (Runners-Up)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names]' value='39' />
+            <format attr='font-family' data-class='subtotal' scope='rows' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names]' value='-90' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='cols' value='#e9f3f2' />
+            <format attr='stroke-color' scope='rows' value='#e9f3f2' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names]' value='Measure Value Names'>
+              <formatted-text>
+                <run>Measure Value Names</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[Multiple Values]</rows>
+        <cols>([federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok] / [federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{EE600134-3FC8-4522-BB5C-6B815EC675C3}' />
+    </worksheet>
+    <worksheet name='Runners-up Count By Country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WorldCup Data' name='federated.1v0ot6x1s51lak131kgpz0ctyga8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0ot6x1s51lak131kgpz0ctyga8'>
+            <column caption='number of records' datatype='integer' name='[Calculation_1392456735809101834]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;England&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;Korea/Japan&quot;' value='&quot;Japan&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='string' name='[Fourth]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Runners-Up]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Third]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Winner]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Runners-Up]' derivation='Count' name='[cnt:Runners-Up:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1392456735809101834]' derivation='Min' name='[min:Calculation_1392456735809101834:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fourth]' derivation='None' name='[none:Fourth:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Runners-Up]' derivation='None' name='[none:Runners-Up:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Third]' derivation='None' name='[none:Third:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Winner]' derivation='None' name='[none:Winner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]' direction='DESC' using='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[cnt:Runners-Up:qk]' />
+          <slices>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Fourth:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Third:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[min:Calculation_1392456735809101834:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[min:Calculation_1392456735809101834:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[min:Calculation_1392456735809101834:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='860' />
+            <format attr='height' value='626' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' data-class='total' scope='cols' value='#e9f3f2' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='cols' value='#e9f3f2' />
+            <format attr='stroke-color' scope='rows' value='#e9f3f2' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-color' scope='rows' value='#e9f3f2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='542' />
+                <format attr='maxheight' value='542' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[min:Calculation_1392456735809101834:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]' />
+              <wedge-size column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[cnt:Runners-Up:qk]' />
+              <size column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[cnt:Runners-Up:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Runners-Up:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Count of Runners-Up:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1v0ot6x1s51lak131kgpz0ctyga8].[cnt:Runners-Up:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='889' />
+                <format attr='maxwidth' value='889' />
+                <format attr='minheight' value='458' />
+                <format attr='maxheight' value='458' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[min:Calculation_1392456735809101834:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.55972373485565186' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='889' />
+                <format attr='maxwidth' value='889' />
+                <format attr='minheight' value='458' />
+                <format attr='maxheight' value='458' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1v0ot6x1s51lak131kgpz0ctyga8].[min:Calculation_1392456735809101834:qk] + [federated.1v0ot6x1s51lak131kgpz0ctyga8].[min:Calculation_1392456735809101834:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{E6DA06C7-D914-4172-957E-17A8F4069FA5}' />
+    </worksheet>
+    <worksheet name='Winners Count By Country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WorldCup Data' name='federated.1v0ot6x1s51lak131kgpz0ctyga8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0ot6x1s51lak131kgpz0ctyga8'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;England&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;Korea/Japan&quot;' value='&quot;Japan&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='string' name='[Fourth]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Runners-Up]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Third]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Winner]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Winner]' derivation='Count' name='[cnt:Winner:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fourth]' derivation='None' name='[none:Fourth:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Runners-Up]' derivation='None' name='[none:Runners-Up:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Third]' derivation='None' name='[none:Third:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Winner]' derivation='None' name='[none:Winner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[Action (Runners-Up)]'>
+            <groupfilter function='level-members' level='[Runners-Up]' user:ui-action-filter='[Action4_A199AD51F1AC41EC8BF0E30DFF2C28C1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' direction='DESC' using='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[cnt:Winner:qk]' />
+          <slices>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Fourth:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Third:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[Action (Runners-Up)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#57829e' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' data-class='subtotal' scope='rows' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' scope='rows' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#57829e' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e9f3f2' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#e9f3f2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[cnt:Winner:qk]' />
+              <text column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' />
+              <color column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0608F367-F775-45BC-AED2-B41934DB4ACD}' />
+    </worksheet>
+    <worksheet name='World Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WorldCup Data' name='federated.1v0ot6x1s51lak131kgpz0ctyga8' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1v0ot6x1s51lak131kgpz0ctyga8'>
+            <column aggregation='CountD' datatype='string' name='[Attendance]' role='dimension' type='nominal' />
+            <column caption='Attendance_Position' datatype='string' name='[Calculation_1392456735781154817]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF FINDNTH([Attendance],&quot;.&quot;,2) &gt; 0&#13;&#10;THEN&#13;&#10;LEFT([Attendance],FINDNTH([Attendance],&quot;.&quot;,2)-1)&#13;&#10;ELSEIF FINDNTH([Attendance],&quot;.&quot;,1) &gt; 0&#13;&#10;THEN&#13;&#10;LEFT([Attendance],FINDNTH([Attendance],&quot;.&quot;,1)-1)&#13;&#10;ELSE&#13;&#10;[Attendance]&#13;&#10;END' />
+            </column>
+            <column caption='Audiance' datatype='string' name='[Calculation_1392456735784648707]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='REPLACE([Calculation_1392456735781154817],&quot;.&quot;,&quot;&quot;)' />
+            </column>
+            <column caption='AttendanceInt' datatype='integer' name='[Calculation_1392456735791280134]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT([Calculation_1392456735784648707])' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;England&quot;' value='&quot;United Kingdom&quot;' />
+                <semantic-value key='&quot;Korea/Japan&quot;' value='&quot;Japan&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='string' name='[Fourth]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Runners-Up]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Third]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Winner]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1392456735791280134]' derivation='Max' name='[max:Calculation_1392456735791280134:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fourth]' derivation='None' name='[none:Fourth:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Runners-Up]' derivation='None' name='[none:Runners-Up:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Third]' derivation='None' name='[none:Third:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Winner]' derivation='None' name='[none:Winner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[Action (Runners-Up)]'>
+            <groupfilter function='level-members' level='[Runners-Up]' user:ui-action-filter='[Action4_A199AD51F1AC41EC8BF0E30DFF2C28C1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Fourth:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Third:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]</column>
+            <column>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[Action (Runners-Up)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[max:Calculation_1392456735791280134:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#e9f3f2' />
+            <format attr='stroke-color' scope='cols' value='#e9f3f2' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' value='Winners'>
+              <formatted-text>
+                <run>Winners</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' />
+              <size column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[max:Calculation_1392456735791280134:qk]' />
+              <lod column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]' />
+              <lod column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[max:Calculation_1392456735791280134:qk]' />
+              <lod column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]' />
+              <lod column='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontsize='12'><![CDATA[<[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]> ]]></run>
+                <run bold='true'>vs </run>
+                <run bold='true' fontcolor='#e15759'><![CDATA[<[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[Location:	<[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[Attendance:	<[federated.1v0ot6x1s51lak131kgpz0ctyga8].[max:Calculation_1392456735791280134:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.3871731758117676' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[Latitude (generated)]</rows>
+        <cols>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{2553939A-B56A-4EAA-8E94-FA026D1B22D7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Football Worldcup Report'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#517e9a'>Football WorldCup Champions Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ffffff' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#ffffff' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='background-color' value='#e9f3f2' />
+          <format attr='font-weight' value='bold' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='font-weight' value='normal' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='WorldCup Data' name='federated.1v0ot6x1s51lak131kgpz0ctyga8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1v0ot6x1s51lak131kgpz0ctyga8'>
+        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+          <semantic-values semantic-role='[Country].[Name]'>
+            <semantic-value key='&quot;England&quot;' value='&quot;United Kingdom&quot;' />
+            <semantic-value key='&quot;Korea/Japan&quot;' value='&quot;Japan&quot;' />
+          </semantic-values>
+        </column>
+        <column datatype='string' name='[Fourth]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Runners-Up]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Third]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Winner]' role='dimension' type='nominal' />
+        <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+        <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Fourth]' derivation='None' name='[none:Fourth:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Runners-Up]' derivation='None' name='[none:Runners-Up:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Third]' derivation='None' name='[none:Third:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Winner]' derivation='None' name='[none:Winner:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98142' id='12' param='horz' type-v2='layout-flow' w='99016' x='492' y='929'>
+            <zone h='98142' id='7' param='vert' type-v2='layout-flow' w='91082' x='492' y='929'>
+              <zone fixed-size='49' h='6620' id='9' is-fixed='true' type-v2='title' w='91082' x='492' y='929'>
+                <zone-style>
+                  <format attr='border-color' value='#e9f3f2' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='91522' id='8' type-v2='layout-basic' w='91082' x='492' y='7549'>
+                <zone h='45758' id='15' name='World Map' w='45541' x='46033' y='7549'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45758' id='18' name='Data Table' w='45541' x='492' y='7549'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45764' id='22' param='horz' type-v2='layout-flow' w='91082' x='492' y='53307'>
+                  <zone fixed-size='526' h='45764' id='19' is-fixed='true' name='Measures Values By Year' w='32841' x='492' y='53307'>
+                    <layout-cache minheight='311' type-h='scalable' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45764' id='10' name='Runners-up Count By Country' w='32042' x='33333' y='53307'>
+                    <layout-cache cell-count-w='1' non-cell-size-w='1' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='418' h='45764' id='21' is-fixed='true' name='Winners Count By Country' w='26199' x='65375' y='53307'>
+                    <layout-cache type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='129' h='98142' id='11' is-fixed='true' param='vert' type-v2='layout-flow' w='7934' x='91574' y='929'>
+              <zone h='7085' id='40' mode='checkdropdown' name='Data Table' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]' type-v2='filter' values='database' w='7934' x='91574' y='929'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7085' id='45' mode='checkdropdown' name='Data Table' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]' type-v2='filter' values='database' w='7934' x='91574' y='8014'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7085' id='44' mode='checkdropdown' name='Data Table' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' type-v2='filter' values='database' w='7934' x='91574' y='15099'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7085' id='43' mode='checkdropdown' name='Data Table' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Third:nk]' type-v2='filter' values='database' w='7934' x='91574' y='22184'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7085' id='41' mode='checkdropdown' name='Data Table' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Fourth:nk]' type-v2='filter' values='database' w='7934' x='91574' y='29269'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7085' id='42' mode='checkdropdown' name='Data Table' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]' type-v2='filter' values='database' w='7934' x='91574' y='36354'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='25435' id='17' name='World Map' pane-specification-id='0' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' type-v2='color' w='7934' x='91574' y='43439'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='113' h='14053' id='20' is-fixed='true' name='Measures Values By Year' pane-specification-id='3' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names]' type-v2='color' w='7934' x='91574' y='68874'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='5575' id='23' is-centered='0' is-scaled='1' param='C:/Users/thakk/Downloads/download.png' type-v2='bitmap' w='13100' x='1107' y='1161' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#517e9a'>Football WorldCup Champions Data</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2050' minheight='2050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='77' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98142' id='76' param='vert' type-v2='layout-flow' w='99016' x='492' y='929'>
+                <zone fixed-size='49' h='6620' id='9' type-v2='title' w='91082' x='492' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#e9f3f2' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='45' h='5575' id='23' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/thakk/Downloads/download.png' type-v2='bitmap' w='13100' x='1107' y='1161'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7085' id='40' mode='checkdropdown' name='Data Table' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]' type-v2='filter' values='database' w='7934' x='91574' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7085' id='45' mode='checkdropdown' name='Data Table' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]' type-v2='filter' values='database' w='7934' x='91574' y='8014'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7085' id='44' mode='checkdropdown' name='Data Table' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' type-v2='filter' values='database' w='7934' x='91574' y='15099'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7085' id='43' mode='checkdropdown' name='Data Table' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Third:nk]' type-v2='filter' values='database' w='7934' x='91574' y='22184'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7085' id='41' mode='checkdropdown' name='Data Table' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Fourth:nk]' type-v2='filter' values='database' w='7934' x='91574' y='29269'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7085' id='42' mode='checkdropdown' name='Data Table' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]' type-v2='filter' values='database' w='7934' x='91574' y='36354'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45758' id='18' is-fixed='true' name='Data Table' w='45541' x='492' y='7549'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45758' id='15' is-fixed='true' name='World Map' w='45541' x='46033' y='7549'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='25435' id='17' name='World Map' pane-specification-id='0' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' type-v2='color' w='7934' x='91574' y='43439'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45764' id='19' is-fixed='true' name='Measures Values By Year' w='32841' x='492' y='53307'>
+                  <layout-cache minheight='311' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='113' h='14053' id='20' name='Measures Values By Year' pane-specification-id='3' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names]' type-v2='color' w='7934' x='91574' y='68874'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45764' id='10' is-fixed='true' name='Runners-up Count By Country' w='32042' x='33333' y='53307'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45764' id='21' is-fixed='true' name='Winners Count By Country' w='26199' x='65375' y='53307'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{16D6F154-9041-4249-BC6F-33D9F41E52E1}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' maximized='true' name='Football Worldcup Report'>
+      <viewpoints>
+        <viewpoint name='Data Table' />
+        <viewpoint name='Measures Values By Year'>
+          <zoom type='fit-height' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Runners-up Count By Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Winners Count By Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='World Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{EFE3F88E-CCFA-4D0E-8464-22D6F12FD5C8}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Data Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Attendance:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Calculation_1392456735784648707:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Country:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Fourth:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Third:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3D515831-FA4D-4A24-AC6B-2100A166E236}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Measures Values By Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[:Measure Names]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6B462980-B1F2-4C43-88CE-1CA235588D4D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Runners-up Count By Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]' type='color' />
+            <card pane-specification-id='4' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[cnt:Runners-Up:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5EADCDA8-AF89-4017-9F68-E552332186E7}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Winners Count By Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='192'>
+            <card pane-specification-id='0' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AE973DF9-FC39-4A52-8EC5-0A399E1D9818}' />
+    </window>
+    <window class='worksheet' hidden='true' name='World Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[max:Calculation_1392456735791280134:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Calculation_1392456735776907264:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Calculation_1392456735792832519:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Pivot Field Names:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Pivot Field Values:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Runners-Up:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Winner:nk]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:ok]</field>
+            <field>[federated.1v0ot6x1s51lak131kgpz0ctyga8].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B68FA853-101B-4A0C-AB87-BD7E12CEB5BF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Football Worldcup Report' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
